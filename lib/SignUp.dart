@@ -238,7 +238,9 @@ class _SignUpState extends State<SignUp> {
                           if (value?.isEmpty == true) {
                             return "Enter Password";
                           } else if (passwordController ==
-                              passswordController) {}
+                              passswordController) {
+                            return "its same";
+                          }
                           return null;
                         }),
                   ),

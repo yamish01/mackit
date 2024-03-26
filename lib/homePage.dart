@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mackit/FirstPage.dart';
 import 'package:mackit/SignUp.dart';
 
 import 'package:mackit/widgets.dart';
@@ -173,7 +174,10 @@ class _HomePageState extends State<HomePage> {
                   Padding(
                     padding: const EdgeInsets.all(10),
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => FirstPage()));
+                      },
                       child: const Text("Log In",
                           style: TextStyle(color: Colors.white)),
                       style: ElevatedButton.styleFrom(
